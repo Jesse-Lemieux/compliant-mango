@@ -54,6 +54,23 @@ A quantifier is a cool little tool we can use to determine how many times a spec
 ```
 this is trying to match any string that contains a-z, 0-9, _, ., or -. The quantifier + means that it has to contain at least one of these in order to have a match!
 
+### Grouping Constructs
+
+So let's talk about grouping constructs. Our first group that is in our email regex is:
+```
+([a-z0-9_\.-]+)
+```
+So this is the first group that appears in our regex. This must be true before moving on to "match" the next part of the code.
+```
+([\da-z\.-]+)
+```
+That was our second group that appears in this email regex.
+```
+([a-z\.]{2,6})
+```
+Last but not least, that was our third and final group that appears in this email regex.
+In order to move on we have to make sure we are following the guidelines of the group before moving on to the next group. That’s just how it works!
+
 ### OR Operator
 
 ### Character Classes
