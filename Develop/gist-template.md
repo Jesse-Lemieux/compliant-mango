@@ -81,24 +81,52 @@ Parentheses ( ) represent remembered matches. This is especially useful for find
 There are many ways to use bracket expressions and I encourage you to try and understand their concepts! 
 
 
-### OR Operator
-
 ### Character Classes
+
+In our email regex we have:
+```
+\d
+```
+as our character class. It will match a single letter character from a-z after the @ sign in the email address. Ensuring that a letter is matched after the @ in the email and not a number or special character.
+
+
+### The OR Operator
+
+The OR operator otherwise known as Alteration is basically just “OR” for regex. It is denoted as a vertical line character ```|``` .
+ 
+Unfortunately we do not have any in our example regex for emails so we won't be going over it but I encourage you to do your research too!
+
 
 ### Flags
 
-### Grouping and Capturing
+You’re starting to see that regular expressions are powerful patterns that provide a way to search and replace. Regular expressions may have flags that affect the search and as of right now there are only 6 of them in JavaScript:
+```
+i
+g
+m
+s
+u
+y
+```
+As you can see we don't have any flags in our example regex for emails so we won't be going into great detail but I once again encourage you use your GoogleFu!
 
-### Bracket Expressions
+### Character Escapes
 
-### Greedy and Lazy Match
+Let’s say we want to find something like a dot. Not “any character”, but just a dot. To use a special character as a regular one, prepend it with a backslash like so:
+```
+\ .
+```
+That’s what we call “escaping a character”. It’s pretty simple right? 
+ 
+Not all code has to be difficult and as time goes on you will begin to understand and easily remember concepts to make your life a little easier but always remember your greatest tool…
+GoogleFu - The art of googling
 
-### Boundaries
 
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+I have created this walkthrough to help fellow junior developers as part of one the many Challenges given at the Uconn Fullstack bootcamp.
+
+Jesse Lemieux
+[GitHub](https://github.com/Jesse-Lemieux)
+[Contact Me](mailto:dtrsjesse121@gmail.com)
