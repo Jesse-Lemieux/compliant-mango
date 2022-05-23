@@ -48,6 +48,12 @@ So what does the anchor mean? Well if we are to find a match it has to follow th
 
 ### Quantifiers
 
+A quantifier is a cool little tool we can use to determine how many times a specific character or group of characters needs to be present in order to have a match. For example if we look at our code for matching the email:
+```
+([a-z0-9_\.-]+)
+```
+this is trying to match any string that contains a-z, 0-9, _, ., or -. The quantifier + means that it has to contain at least one of these in order to have a match!
+
 ### OR Operator
 
 ### Character Classes
