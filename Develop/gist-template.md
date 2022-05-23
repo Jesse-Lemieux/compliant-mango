@@ -30,6 +30,22 @@ The code following this summary will be used throughout the tutorial to give exa
 
 ### Anchors
 
+An anchor is what starts and ends the regular expression.
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
+So in this code snippet the anchors are ^ and $
+
+This code snippet is looking for information that starts with
+```
+^([a-z0-9_\.-]+)
+```
+and ends with
+```
+.([a-z\.]{2,6})$
+```
+So what does the anchor mean? Well if we are to find a match it has to follow those initial guidelines. So, it must start and end with the given parameters within the code. If it does not, then it isn’t a match for us!
+
 ### Quantifiers
 
 ### OR Operator
