@@ -16,15 +16,12 @@ The code following this summary will be used throughout the tutorial to give exa
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
+- [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Character Classes](#character-classes)
+- [The OR Operator](#the-or-operator)
+- [Flags](#flags)
+- [Character Escapes](#character-escapes)
 
 ## Regex Components
 
@@ -70,6 +67,19 @@ That was our second group that appears in this email regex.
 ```
 Last but not least, that was our third and final group that appears in this email regex.
 In order to move on we have to make sure we are following the guidelines of the group before moving on to the next group. That’s just how it works!
+
+### Bracket Expressions
+
+In this part we will be looking at one group of symbols in depth, the all powerful brackets!
+```
+[ ] { } ( )
+```
+Brackets [ ] indicate a set of characters to match. Any individual character between the brackets will match, and you can also use a hyphen to define a set!
+Curly braces { } are used to specify an exact amount of things to match. They are used after an expression and will only match 'na' exactly twice!
+Parentheses ( ) represent remembered matches. This is especially useful for find-and-replace operations or any time you need to do something with only part of the match.
+
+There are many ways to use bracket expressions and I encourage you to try and understand their concepts! 
+
 
 ### OR Operator
 
